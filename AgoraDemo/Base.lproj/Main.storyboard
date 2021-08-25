@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xam-r1-uGf">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xam-r1-uGf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,14 +23,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-Vd-8Ue">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-Vd-8Ue">
                                         <rect key="frame" x="40" y="650" width="35" height="30"/>
                                         <state key="normal" title="Mute"/>
                                         <connections>
                                             <action selector="didToggleMute:" destination="Xam-r1-uGf" eventType="touchUpInside" id="cX3-tx-tME"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGp-Wn-LdZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGp-Wn-LdZ">
                                         <rect key="frame" x="313" y="650" width="61" height="30"/>
                                         <state key="normal" title="Hang Up"/>
                                         <connections>
@@ -79,33 +77,11 @@
                                                             <rect key="frame" x="5" y="5" width="91" height="119"/>
                                                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqq-5d-ucl">
-                                                            <rect key="frame" x="5" y="98" width="91" height="26"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longusername" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m4-eN-fwX">
-                                                                    <rect key="frame" x="5" y="6" width="81" height="14.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.77186032859999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="26" id="7jo-1H-H5W"/>
-                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1m4-eN-fwX" secondAttribute="trailing" constant="5" id="NSK-NJ-RXy"/>
-                                                                <constraint firstItem="1m4-eN-fwX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qqq-5d-ucl" secondAttribute="leading" constant="5" id="OjQ-BF-Hc6"/>
-                                                                <constraint firstItem="1m4-eN-fwX" firstAttribute="centerY" secondItem="Qqq-5d-ucl" secondAttribute="centerY" id="ZLy-Gd-D7M"/>
-                                                                <constraint firstItem="1m4-eN-fwX" firstAttribute="centerX" secondItem="Qqq-5d-ucl" secondAttribute="centerX" id="ZQA-9S-Ds2"/>
-                                                            </constraints>
-                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.17254901959999999" green="0.89019607840000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Qqq-5d-ucl" secondAttribute="trailing" constant="5" id="3h7-fA-bN2"/>
                                                         <constraint firstItem="cO3-oc-lon" firstAttribute="top" secondItem="Qcf-OR-FxJ" secondAttribute="top" constant="5" id="A5o-7k-HCt"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Qqq-5d-ucl" secondAttribute="bottom" constant="5" id="Cap-u5-czV"/>
                                                         <constraint firstItem="cO3-oc-lon" firstAttribute="leading" secondItem="Qcf-OR-FxJ" secondAttribute="leading" constant="5" id="Fjq-7s-llb"/>
-                                                        <constraint firstItem="Qqq-5d-ucl" firstAttribute="leading" secondItem="Qcf-OR-FxJ" secondAttribute="leading" constant="5" id="jCx-hm-vci"/>
                                                         <constraint firstAttribute="bottom" secondItem="cO3-oc-lon" secondAttribute="bottom" constant="5" id="waP-LZ-SRs"/>
                                                         <constraint firstAttribute="trailing" secondItem="cO3-oc-lon" secondAttribute="trailing" constant="5" id="yCA-Wl-fRT"/>
                                                     </constraints>
@@ -119,8 +95,6 @@
                                             <constraint firstItem="Qcf-OR-FxJ" firstAttribute="leading" secondItem="9yh-tL-7Lu" secondAttribute="leading" id="qr3-oY-e53"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="nameplateView" destination="Qqq-5d-ucl" id="tZn-w8-680"/>
-                                            <outlet property="usernameLabel" destination="1m4-eN-fwX" id="ewW-XC-ifb"/>
                                             <outlet property="videoView" destination="cO3-oc-lon" id="FaD-6w-VMc"/>
                                         </connections>
                                     </collectionViewCell>
@@ -131,6 +105,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="CeJ-TR-Og1"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Or-BB-Bup" firstAttribute="leading" secondItem="CeJ-TR-Og1" secondAttribute="leading" id="Hs1-9i-evU"/>
@@ -141,7 +116,6 @@
                             <constraint firstItem="CeJ-TR-Og1" firstAttribute="trailing" secondItem="DOJ-4u-eY2" secondAttribute="trailing" id="m54-5Z-Hqj"/>
                             <constraint firstItem="DOJ-4u-eY2" firstAttribute="leading" secondItem="CeJ-TR-Og1" secondAttribute="leading" id="sgV-oi-b5J"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="CeJ-TR-Og1"/>
                     </view>
                     <navigationItem key="navigationItem" id="zFz-Eh-apa"/>
                     <connections>
@@ -153,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH9-uv-Zm6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1170" y="-185"/>
+            <point key="canvasLocation" x="-1819" y="-336"/>
         </scene>
     </scenes>
 </document>

@@ -9,8 +9,6 @@
 import UIKit
 
 class VideoCollectionViewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var videoView: UIView!
-    @IBOutlet weak var nameplateView: UIView!
-    @IBOutlet weak var usernameLabel: UILabel!
 }
